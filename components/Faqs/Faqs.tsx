@@ -37,9 +37,10 @@ const faqs = [
 ];
 
 const Faqs = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleAccordion = (index: any) => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 

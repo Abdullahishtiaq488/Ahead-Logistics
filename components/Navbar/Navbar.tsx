@@ -25,14 +25,14 @@ const Navbar = () => {
 
           {/* Logo */}
           <a href="/" className="flex items-center">
-  <Image
-    src="/assets/images/downloads.png"
-    width={150} // original width
-    height={150} // original height
-    alt="Flowbite Logo"
-    className="w-24 h-auto md:w-36 md:auto" // Responsive sizing
-  />
-</a>
+            <Image
+              src="/assets/images/downloads.png"
+              width={150} // original width
+              height={150} // original height
+              alt="Flowbite Logo"
+              className="w-24 h-auto md:w-36 md:auto" // Responsive sizing
+            />
+          </a>
 
           {/* Desktop Menu (centered links) */}
           <div className="hidden md:flex flex-1 justify-center space-x-8 font-bold ">
@@ -68,7 +68,7 @@ const Navbar = () => {
           } transition-transform duration-300 ease-in-out`}
       >
         <div className="relative h-full w-full bg-white dark:bg-gray-800 p-6 flex flex-col justify-center items-center">
-          
+
           {/* Close Button */}
           <button
             className="absolute top-4 right-4 text-gray-500 hover:text-pink-600 dark:text-gray-400 dark:hover:text-pink-600"

@@ -48,9 +48,10 @@ const ServicePage: React.FC<ServicePageProps> = ({ params }) => {
                 </h1>
 
                 {/* Detailed Content */}
-                <p className="mt-4 text-lg">
-                    {service.content}
-                </p>
+                <div
+                    className="mt-4 text-lg"
+                    dangerouslySetInnerHTML={{ __html: service.content }} // Render HTML content
+                />
             </div>
             <Footer />
         </>

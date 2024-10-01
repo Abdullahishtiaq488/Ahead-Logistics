@@ -18,7 +18,7 @@ const Navbar = () => {
     <>
       {/* Navbar Container */}
       <div className="w-full h-6 bg-pink-700 flex flex-col justify-center items-center">
-        <p className='text-white font-bold'>This is a strip</p>
+        <p className='text-white font-bold'>Call: <a href='tel:+18506384665'>+1 850 6384665</a></p>
       </div>
       <nav className="bg-black text-white  border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
         <div className="container flex justify-between items-center mx-auto">
@@ -42,9 +42,9 @@ const Navbar = () => {
             <a href="#faqs" className="text-white hover:text-pink-600 dark:text-white">FAQs</a>
           </div>
 
-          <button className="hidden sm:block bg-pink-500 text-white font-bold py-2 px-4 rounded-lg border-r-1 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300">
+         <a href="tel:+18506384665"> <button className="hidden md:block bg-pink-500 text-white font-bold py-2 px-4 rounded-lg border-r-1 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300">
             Call Now
-          </button>
+          </button></a>
 
           {/* Mobile Menu Button */}
           <button

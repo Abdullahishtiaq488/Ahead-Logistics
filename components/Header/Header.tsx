@@ -25,11 +25,11 @@ const Header = () => {
             </h1>
             <p className="mt-4 text-sm md:text-lg">
             At Ahead of the Rest Freight, we understand that in the world of logistics, every mile counts. 
-            That&aposs why we are dedicated to providing state-of-the-art solutions for all your transportation 
+            That&#39;s why we are dedicated to providing state-of-the-art solutions for all your transportation 
             and supply chain needs. 
             </p>
             <p className="mt-2 text-sm md:text-lg">
-            Whether you&aposre shipping a single package or managing
+            Whether you&#39;re shipping a single package or managing
             complex logistics for your business, our expertise ensures timely delivery and the utmost care for your goods.
             </p>
             <button className="bg-pink-500 mt-4 text-white font-bold py-2 px-4 rounded-full border-r-1 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300">

@@ -4,8 +4,9 @@ import bgImage from '../../public/assets/images/technological-futuristic-hologra
 
 const Footer = () => {
   return (
+    
     <footer className="relative text-white h-auto mt-20" id='footer'>
-      {/* Background Image with Gradient Overlay */}
+
       <div className="absolute inset-0">
         <Image
           src={bgImage}
@@ -55,12 +56,11 @@ const Footer = () => {
               />
             </a>
 
-
             <p className='mt-4 md:mt-6'>
               At Ahead of the Rest Freight, we are dedicated to providing top-notch logistics
               and transportation solutions tailored to meet the needs of our diverse clientele.
               With a team of experienced professionals and a commitment to excellence, we ensure that your
-              goods are delivered safely and on time.  Join us in transforming the logistics industry
+              goods are delivered safely and on time. Join us in transforming the logistics industry
               with innovative solutions and unparalleled service.
             </p>
           </div>
@@ -73,6 +73,7 @@ const Footer = () => {
               <li><a href="#testimonials" className="hover:underline">Testimonials</a></li>
               <li><a href="#services" className="hover:underline">Our Services</a></li>
               <li><a href="#trucks" className="hover:underline">Who can Work with us</a></li>
+              <li><a href="/privacy-policy" className="hover:underline">Privacy Policy</a></li>
 
             </ul>
           </div>
@@ -81,9 +82,7 @@ const Footer = () => {
           <div className="p-2">
             <h2 className="text-xl font-bold mb-4 md:mb-8">Our Location</h2>
             <ul className="space-y-2 text-sm">
-              <li><a href="/shipping" className="hover:underline">Shipping Info</a></li>
-              <li><a href="/returns" className="hover:underline">Returns Policy</a></li>
-              <li><a href="/support" className="hover:underline">Support</a></li>
+            <iframe className='w-full h-auto' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.903788142798!2d-87.190473!3d30.495473199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8890c0285b0e2bc7%3A0x6c76aaee360fb49d!2s6901a%20N%209th%20Ave%20%231387%2C%20Pensacola%2C%20FL%2032504%2C%20USA!5e0!3m2!1sen!2s!4v1727715305783!5m2!1sen!2s"  loading="lazy" ></iframe>
             </ul>
           </div>
 
@@ -91,9 +90,9 @@ const Footer = () => {
           <div className="p-2">
             <h2 className="text-xl font-bold mb-4 md:mb-8">Contact</h2>
             <ul className="space-y-2">
-              <li>1234 Street Name, City</li>
+              <li>6901A N 9th Avenue #1387 Pensacola, Florida, 32504</li>
               <li>Email: info@company.com</li>
-              <li>Phone: +1 234 567 890</li>
+              <li>Phone: +1 850 6384665</li>
             </ul>
           </div>
         </div>
@@ -103,7 +102,7 @@ const Footer = () => {
 
         {/* Last Row - Copyright */}
         <div className="text-center text-sm">
-          <p>© {new Date().getFullYear()} Your Company. All Rights Reserved.</p>
+          <p>© { new Date().getFullYear()} Your Company. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

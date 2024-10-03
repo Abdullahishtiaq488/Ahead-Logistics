@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
           </p>
           <ul className="list-disc pl-6 mt-4">
             <li className="mb-2">
-              <strong>Opt-out:</strong> You can unsubscribe by following the unsubscribe link in our emails, replying "STOP" to text messages, or contacting us directly at [insert contact details].
+              <strong>Opt-out:</strong> You can unsubscribe by following the unsubscribe link in our emails, replying &#39;&#39;STOP&#39;&#39; to text messages, or contacting us directly at [insert contact details].
             </li>
             <li className="mb-2">
               <strong>Continued Service Communications:</strong> After opting out, you will only receive essential communications related to ongoing services or pending legal requirements.

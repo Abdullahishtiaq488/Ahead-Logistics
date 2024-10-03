@@ -10,6 +10,8 @@ interface FormData {
   fullName: string;
   phoneNumber: string;
   email: string;
+  agreeToTerms: boolean; // Checkbox for Terms of Service
+  subscribeToTips: boolean; // Checkbox for Tips and News
 }
 
 const Header = () => {
@@ -18,15 +20,18 @@ const Header = () => {
     fullName: '',
     phoneNumber: '',
     email: '',
+    agreeToTerms: false,
+    subscribeToTips: false,
   });
 
   const [status, setStatus] = useState<string>('');
 
   // Handle input changes with typed event
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, type, checked, value } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: type === 'checkbox' ? checked : value,
     });
   };
 
@@ -49,6 +54,8 @@ const Header = () => {
           fullName: '',
           phoneNumber: '',
           email: '',
+          agreeToTerms: false,
+          subscribeToTips: false,
         });
       } else {
         setStatus("Failed to send email.");
@@ -132,6 +139,31 @@ const Header = () => {
                 onChange={handleChange}
                 required
               />
+            </div>
+            <div>
+              <label className="flex items-center text-sm">
+                <input
+                  type="checkbox"
+                  name="agreeToTerms"
+                  checked={formData.agreeToTerms}
+                  onChange={handleChange}
+                  className="mr-2 text-sm"
+                  required
+                />
+                I have read and agree to the<a href='/' className='text-blue-600 ml-1'>Terms of Service</a>
+              </label>
+            </div>
+            <div>
+              <label className="flex items-center">
+                <input
+                  type="checkbox"
+                  name="subscribeToTips"
+                  checked={formData.subscribeToTips}
+                  onChange={handleChange}
+                  className="mr-2 text-sm"
+                />
+                I want to receive the most useful tips and news
+              </label>
             </div>
             <button
               type="submit"

@@ -93,7 +93,7 @@ const Footer = () => {
               <li>6901A N 9th Avenue #1387 Pensacola, Florida, 32504</li>
               <li><a href='mail:aheadoftheothersfreight786@gmail.com'>Email: R@theaheadotrfreight.com</a></li>
               
-              <li><a href='tel:+18506384665'>Phone: +1 850 6384665</a></li>
+              <li><a href='tel:+12514447918'>Phone: +1 251 4447918</a></li>
             </ul>
           </div>
         </div>

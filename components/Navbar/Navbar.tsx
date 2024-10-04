@@ -18,7 +18,7 @@ const Navbar = () => {
     <>
       {/* Navbar Container */}
       <div className="w-full h-6 bg-pink-700 flex flex-col justify-center items-center">
-        <p className='text-white font-bold'>Call: <a href='tel:+18506384665'>+1 850 6384665</a></p>
+        <p className='text-white font-bold'>Call: <a href='tel:+12514447918'>+1 251 4447918</a></p>
       </div>
       <nav className="bg-black text-white  border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
         <div className="container flex justify-between items-center mx-auto">

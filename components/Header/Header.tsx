@@ -12,6 +12,7 @@ interface FormData {
   email: string;
   agreeToTerms: boolean; // Checkbox for Terms of Service
   subscribeToTips: boolean; // Checkbox for Tips and News
+  trailerType: string; // New field for trailer type
 }
 
 const Header = () => {
@@ -22,18 +23,23 @@ const Header = () => {
     email: '',
     agreeToTerms: false,
     subscribeToTips: false,
+    trailerType: 'Flatbed', // Default value for trailer type
   });
 
   const [status, setStatus] = useState<string>('');
 
   // Handle input changes with typed event
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { name, type, checked, value } = e.target;
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const target = e.target as HTMLInputElement | HTMLSelectElement;
+    const { name, type, value } = target;
+  
+    // For checkboxes, use the 'checked' property; for other inputs, use 'value'
     setFormData({
       ...formData,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: type === 'checkbox' ? (target as HTMLInputElement).checked : value,
     });
   };
+  
 
   // Handle form submission with typed event
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -56,6 +62,7 @@ const Header = () => {
           email: '',
           agreeToTerms: false,
           subscribeToTips: false,
+          trailerType: 'Flatbed',
         });
       } else {
         setStatus("Failed to send email.");
@@ -141,26 +148,42 @@ const Header = () => {
               />
             </div>
             <div>
+              <label className="block text-sm font-medium" htmlFor="trailerType">Trailer Type</label>
+              <select
+                id="trailerType"
+                name="trailerType"
+                className="w-full p-2 border border-gray-300 rounded-lg"
+                value={formData.trailerType}
+                onChange={handleChange}
+              >
+                <option value="Flatbed">Flatbed</option>
+                <option value="Dry Van">Dry Van</option>
+                <option value="Reefer">Reefer</option>
+                <option value="Box Truck">Box Truck</option>
+                <option value="Power Only">Power Only</option>
+              </select>
+            </div>
+            <div>
               <label className="flex items-center text-sm">
                 <input
                   type="checkbox"
                   name="agreeToTerms"
                   checked={formData.agreeToTerms}
                   onChange={handleChange}
-                  className="mr-2 text-sm"
+                  className="mr-2"
                   required
                 />
                 I have read and agree to the<a href='/' className='text-blue-600 ml-1'>Terms of Service</a>
               </label>
             </div>
             <div>
-              <label className="flex items-center">
+              <label className="flex items-center text-sm">
                 <input
                   type="checkbox"
                   name="subscribeToTips"
                   checked={formData.subscribeToTips}
                   onChange={handleChange}
-                  className="mr-2 text-sm"
+                  className="mr-2"
                 />
                 I want to receive the most useful tips and news
               </label>

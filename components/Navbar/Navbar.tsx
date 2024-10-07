@@ -44,7 +44,7 @@ const Navbar = () => {
             <a href="#faqs" className="text-white hover:text-pink-600 dark:text-white">FAQs</a>
           </div>
 
-          <a href="tel:+18506384665"> <button className="hidden md:block bg-pink-500 text-white font-bold py-2 px-4 rounded-lg border-r-1 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300">
+          <a type='button' area-label="phone number" href="tel:+18506384665"> <button className="hidden md:block bg-pink-500 text-white font-bold py-2 px-4 rounded-lg border-r-1 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300">
             Call Now
           </button></a>
 
@@ -53,6 +53,7 @@ const Navbar = () => {
             type="button"
             className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-full md:hidden focus:outline-none dark:text-gray-400"
             aria-controls="mobile-menu"
+            aria-label='Open Toggle Menu'
             aria-expanded={isOpen ? 'true' : 'false'}
             onClick={handleMenuToggle}
           >

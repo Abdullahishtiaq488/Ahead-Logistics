@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
     <>
       <Navbar />
       <div className="relative text-center my-8 bg-black text-white mt-20" id='faqs'>
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[10%] h-1 bg-pink-600 "></div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[10%] h-1 bg-pink-700 "></div>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold p-3">
           Privacy Policy
         </h2>
@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="mb-8">
-          <h3 className="text-xl font-semibold mb-4 text-pink-600">1. Consent to Opt-In</h3>
+          <h3 className="text-xl font-semibold mb-4 text-pink-700">1. Consent to Opt-In</h3>
           <p className="text-lg">
             When using the services of Ahead of the Rest Freight, you may be provided the option to subscribe or opt-in for communications, updates, and other information related to our dispatching services. By opting in, you agree to the following:
           </p>
@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="mb-8">
-          <h3 className="text-xl font-semibold mb-4 text-pink-600">2. Opt-Out Choice</h3>
+          <h3 className="text-xl font-semibold mb-4 text-pink-700">2. Opt-Out Choice</h3>
           <p className="text-lg">
             We respect your decision to stop receiving communications from us. You can opt-out from receiving updates or messages anytime.
           </p>
@@ -54,14 +54,14 @@ const PrivacyPolicy = () => {
         </section>
 
         <section className="mb-8">
-          <h3 className="text-xl font-semibold mb-4 text-pink-600">3. Data Security and Confidentiality</h3>
+          <h3 className="text-xl font-semibold mb-4 text-pink-700">3. Data Security and Confidentiality</h3>
           <p className="text-lg">
             We prioritize the security of your personal information. All the data you provide is encrypted and securely stored in our systems. We do not sell, rent, or share your information with third parties without your consent unless required by law.
           </p>
         </section>
 
         <section className="mb-8">
-          <h3 className="text-xl font-semibold mb-4 text-pink-600">4. Changes to Our Privacy Policy</h3>
+          <h3 className="text-xl font-semibold mb-4 text-pink-700">4. Changes to Our Privacy Policy</h3>
           <p className="text-lg">
             We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. If these changes impact your privacy, we will notify you and seek your consent where required by law.
           </p>

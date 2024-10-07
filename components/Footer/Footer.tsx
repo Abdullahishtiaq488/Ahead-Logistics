@@ -30,10 +30,10 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Subscribe to our newsletter"
-              className="p-2 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-pink-500 text-black"
+              className="p-2 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-pink-700 text-black"
               style={{ width: '250px' }} // Adjust the width as needed
             />
-            <button className="bg-pink-500 text-white font-bold py-2 px-4 hover:bg-pink-700 transition duration-300">
+            <button title='Subscirbe to Newsletter' className="bg-pink-700 text-white font-bold py-2 px-4 hover:bg-pink-900 transition duration-300">
               Subscribe
             </button>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
         <hr className="border-t border-gray-500 mb-4" />
 
         {/* Second Row - Four Columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-8 p-4 md:p-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-8 p-2 md:p-10">
           {/* Column 1: About */}
           <div className="p-2">
             <a href="/" className="flex items-center">
@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
 
           {/* Column 2: About Us Links */}
-          <div className="p-2">
+          <div className="md:p-2">
             <h2 className="text-xl font-bold mb-4 md:mb-8">Quick Links</h2>
             <ul className="space-y-2">
               <li><a href="#home" className="hover:underline">Home</a></li>
@@ -79,15 +79,16 @@ const Footer = () => {
           </div>
 
           {/* Column 3: FAQs Links */}
-          <div className="p-2">
+          <div className="md:p-2">
             <h2 className="text-xl font-bold mb-4 md:mb-8">Our Location</h2>
             <ul className="space-y-2 text-sm">
-            <iframe className='w-full h-auto' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.903788142798!2d-87.190473!3d30.495473199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8890c0285b0e2bc7%3A0x6c76aaee360fb49d!2s6901a%20N%209th%20Ave%20%231387%2C%20Pensacola%2C%20FL%2032504%2C%20USA!5e0!3m2!1sen!2s!4v1727715305783!5m2!1sen!2s"  loading="lazy" ></iframe>
+            <li><iframe className='w-full h-auto' title='Map of Location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.903788142798!2d-87.190473!3d30.495473199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8890c0285b0e2bc7%3A0x6c76aaee360fb49d!2s6901a%20N%209th%20Ave%20%231387%2C%20Pensacola%2C%20FL%2032504%2C%20USA!5e0!3m2!1sen!2s!4v1727715305783!5m2!1sen!2s"  
+            loading="lazy" ></iframe></li>
             </ul>
           </div>
 
           {/* Column 4: Contact Info */}
-          <div className="p-2">
+          <div className="md:p-2">
             <h2 className="text-xl font-bold mb-4 md:mb-8">Contact</h2>
             <ul className="space-y-2">
               <li>6901A N 9th Avenue #1387 Pensacola, Florida, 32504</li>

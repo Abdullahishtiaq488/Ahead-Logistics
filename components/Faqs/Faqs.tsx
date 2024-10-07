@@ -47,7 +47,7 @@ const Faqs = () => {
   return (
     <>
       <div className="relative text-center my-8 bg-black text-white mt-20" id='faqs'>
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[10%] h-1 bg-pink-600 "></div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[10%] h-1 bg-pink-700 "></div>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold p-3">
           Frequently Asked Questions
         </h2>
@@ -63,7 +63,7 @@ const Faqs = () => {
               >
                 {/* Quora Q Icon */}
                 <span className="flex items-center ">
-                  <span className="bg-pink-600  text-white rounded-full min-w-7 min-h-7 flex justify-center items-center mr-2 font-bold text-lg">
+                  <span className="bg-pink-700  text-white rounded-full min-w-7 min-h-7 flex justify-center items-center mr-2 font-bold text-lg">
                     Q
                   </span>
 

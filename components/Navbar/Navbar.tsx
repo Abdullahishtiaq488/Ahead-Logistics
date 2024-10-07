@@ -27,12 +27,14 @@ const Navbar = () => {
           <a href="/" className="flex items-center">
             <Image
               src="/assets/images/downloads.png"
-              width={150} // original width
-              height={150} // original height
+              width={150}
+              height={150}
               alt="Flowbite Logo"
-              className="w-24 h-auto md:w-36 md:auto" // Responsive sizing
+              className="w-24 h-auto md:w-36" // Responsive sizing
+              priority // Ensures the image loads quickly and prevents from shifting
             />
           </a>
+
 
           {/* Desktop Menu (centered links) */}
           <div className="hidden md:flex flex-1 justify-center space-x-8 font-bold ">
@@ -42,7 +44,7 @@ const Navbar = () => {
             <a href="#faqs" className="text-white hover:text-pink-600 dark:text-white">FAQs</a>
           </div>
 
-         <a href="tel:+18506384665"> <button className="hidden md:block bg-pink-500 text-white font-bold py-2 px-4 rounded-lg border-r-1 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300">
+          <a href="tel:+18506384665"> <button className="hidden md:block bg-pink-500 text-white font-bold py-2 px-4 rounded-lg border-r-1 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300">
             Call Now
           </button></a>
 
@@ -54,7 +56,7 @@ const Navbar = () => {
             aria-expanded={isOpen ? 'true' : 'false'}
             onClick={handleMenuToggle}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" area-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}></path>
             </svg>
           </button>
@@ -72,9 +74,9 @@ const Navbar = () => {
           {/* Close Button */}
           <button
             className="absolute top-4 right-4 text-gray-500 hover:text-pink-600 dark:text-gray-400 dark:hover:text-pink-600"
-            onClick={handleMenuToggle}
+            onClick={handleMenuToggle} aria-label='Close'
           >
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" area-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>

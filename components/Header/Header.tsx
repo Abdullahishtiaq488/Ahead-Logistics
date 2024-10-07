@@ -47,9 +47,9 @@ const Header = () => {
 
     try {
       // Replace with your EmailJS details
-      const serviceId = 'service_447u1p7'; // e.g., 'service_xxx'
-      const templateId = 'template_hfi0tgs'; // e.g., 'template_xxx'
-      const userId = 'Cp-YKI0-fqzc6SZPp'; // e.g., 'user_xxx'
+      const serviceId = 'service_447u1p7'; 
+      const templateId = 'template_hfi0tgs'; 
+      const userId = 'Cp-YKI0-fqzc6SZPp'; 
 
       // Send the email
       const response = await emailjs.send(serviceId, templateId, { ...formData }, userId);
@@ -99,7 +99,7 @@ const Header = () => {
             and supply chain needs.
           </p>
           <p>Whether you need reliable dispatch services, real-time tracking, or customized logistics solutions, we’ve got you covered. Trust us to keep your business moving forward.</p>
-          <button className="bg-pink-500 mt-4 text-white font-bold py-2 px-4 rounded-full border-r-1 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300">
+          <button area-label="Click to Call" className="bg-pink-700 mt-4 text-white font-bold py-2 px-4 rounded-full border-r-1 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-300 transition duration-300">
             Call Now
           </button>
         </div>
@@ -190,7 +190,7 @@ const Header = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 rounded-lg"
+              className="w-full bg-pink-700 hover:bg-pink-900 text-white font-bold py-2 rounded-lg"
             >
               Send Request
             </button>

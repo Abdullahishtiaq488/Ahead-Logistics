@@ -71,7 +71,7 @@ const Testimonials = () => {
   return (
     <>
       <div className="relative text-center my-8 bg-black text-white mt-20" id='testimonials'>
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[10%] h-1 bg-pink-600"></div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[10%] h-1 bg-pink-700"></div>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold p-3">
           Testimonials
         </h2>
@@ -98,14 +98,14 @@ const Testimonials = () => {
                 <div className="absolute top-0 left-0 transform -translate-y-6 text-pink-600 text-6xl">
                   &#8220;
                 </div>
-                <p className="text-lg mt-2 md:text-xl text-gray-700">
+                <p className="text-lg mt-2 md:text-xl text-gray-900">
                   {testimonials[currentIndex].content}
                 </p>
                 <div className="mt-4">
                   <h3 className="text-md md:text-lg font-bold text-gray-900">
                     {testimonials[currentIndex].name}
                   </h3>
-                  <p className="text-sm text-gray-600">{testimonials[currentIndex].company}</p>
+                  <p className="text-sm text-gray-900">{testimonials[currentIndex].company}</p>
                 </div>
               </div>
             </div>
@@ -114,13 +114,13 @@ const Testimonials = () => {
             <div className="mt-6 flex justify-between space-x-4">
               <button
                 onClick={prevSlide}
-                className="text-gray-500 hover:text-gray-800 transition-colors"
+                className="text-gray-900 hover:text-gray-800 transition-colors"
               >
                 &#10094; Previous
               </button>
               <button
                 onClick={nextSlide}
-                className="text-gray-500 hover:text-gray-800 transition-colors"
+                className="text-gray-900 hover:text-gray-800 transition-colors"
               >
                 Next &#10095;
               </button>
